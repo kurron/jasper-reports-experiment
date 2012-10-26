@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Jasper Reports">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/dependencies/jasperreports-javaflow-4.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/dependencies/jasperreports-applet-4.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/dependencies/jasperreports-4.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/build/dependencies/jasperreports-4.7.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

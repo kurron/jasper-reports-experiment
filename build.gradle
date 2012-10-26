@@ -5,7 +5,7 @@ defaultTasks 'clean', 'collectJars', 'build'
 repositories {
     mavenCentral()
     flatDir {
-        dirs "${rootDir}/lib"
+        dirs "${rootDir}/local-repository"
     }
 }
 
@@ -18,11 +18,16 @@ configurations {
 
 dependencies {
     groovy "org.codehaus.groovy:groovy-all:${groovyVersion}"
+    compile "jaspersoft:jasperreports:${jasperVersion}"
+    compile "jaspersoft:jasperreports-applet:${jasperVersion}"
+    compile "jaspersoft:jasperreports-fonts:${jasperVersion}"
+    compile "jaspersoft:jasperreports-javaflow:${jasperVersion}"
     testCompile "org.spockframework:spock-core:${spockVersion}"
     testCompile "org.hamcrest:hamcrest-core:${hamcrestVersion}"
     sourceArchives "org.spockframework:spock-core:${spockVersion}:sources"
     sourceArchives "org.hamcrest:hamcrest-core:${hamcrestVersion}:sources"
     sourceArchives "org.codehaus.groovy:groovy-all:${groovyVersion}:sources"
+    sourceArchives "jaspersoft:jasperreports:${jasperVersion}:sources"
 }
 
 task generateWrapper(type: Wrapper) {

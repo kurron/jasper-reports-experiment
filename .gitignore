@@ -2,9 +2,3 @@ build
 .gradle
 out
 .idea/workspace.xml
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
